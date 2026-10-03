@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "mmlu_pro_10356",
+    "source": "mmlu-pro-stratified",
+    "question": "A method is to be written to search an array for a value that is larger than a given item and return its index. The problem specification does not indicate what should be returned if there are several such values in the array. Which of the following actions would be best?",
+    "options": [
+      "The method should be written so as to return the index of every occurrence of a larger value.",
+      "The method should be written to return the largest index among larger values.",
+      "The method should be written to return the last occurrence of a larger value.",
+      "The specification should be modified to indicate what should be done if there is more than one index of larger values."
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "ori_mmlu-high_school_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10357",
+    "source": "mmlu-pro-stratified",
+    "question": "In the program below, y is a positive integer (e.g. l, 2, 3, ...).\n result ← 0\n REPEAT 3 TIMES {\n REPEAT y TIMES {\n result ← result + 1\n }\n }",
+    "options": [
+      "y^2",
+      "3y",
+      "y+3",
+      "9y"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "ori_mmlu-high_school_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10358",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following has the greatest potential for compromising a user's personal privacy?",
+    "options": [
+      "A group of cookies stored by the user's Web browser",
+      "The brand of the user's computer",
+      "The user's search engine history",
+      "The Internet Protocol (IP) address of the user's computer"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-high_school_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10359",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following is NOT a property of bitmap graphics?",
+    "options": [
+      "Bitmaps can be made transparent",
+      "Realistic lighting and shading can be done.",
+      "All line segments can be displayed as straight.",
+      "They can support millions of colors"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10360",
+    "source": "mmlu-pro-stratified",
+    "question": "Two expressions E and F are said to be unifiable if there are substitutions for the variables of E and F that make the expressions lexically identical. In the following three expressions, only w, x, y, and z are variables.\nI. f(w,w)\nII. f(x,1)\nIII. f(y,g(z))\nWhich pairs of these expressions is (are) pairs of unifiable expressions?",
+    "options": [
+      "None of the pairs are unifiable",
+      "(I, II) and (I, III) only",
+      "(I, II) and (II, III) only",
+      "(II, III) only"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10361",
+    "source": "mmlu-pro-stratified",
+    "question": "A particular disk unit uses a bit string to record the occupancy or vacancy of its tracks, with O denoting vacant and 1 denoting occupied. A 32-bit segment of this string has the hexadecimal value D4FE2003. The percentage of occupied tracks for the corresponding part of the disk, to the nearest percent, is",
+    "options": [
+      "12%",
+      "25%",
+      "44%",
+      "38%"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10362",
+    "source": "mmlu-pro-stratified",
+    "question": "Array A contains 256 elements of 4 bytes each. Its first element is stored at physical address 4,096.\nArray B contains 512 elements of 4 bytes each. Its first element is stored at physical address 8,192.\nAssume that only arrays A and B can be cached in an initially empty, physically addressed, physically tagged, direct-mapped, 2K-byte cache with an 8-byte block size. The following loop is then executed.\nfor (i = 0; i < 256; i++)\n        A[i] = A[i] + B[2*i];\nDuring the execution of the loop, how many bytes will be written to memory if the cache has a write-through policy?",
+    "options": [
+      "1024",
+      "1536",
+      "0",
+      "512"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10363",
+    "source": "mmlu-pro-stratified",
+    "question": "What is the rank of the following matrix? A = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "1"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10364",
+    "source": "mmlu-pro-stratified",
+    "question": "If N is the number of instances in the training dataset, nearest neighbors has a classification run time of",
+    "options": [
+      "O( N!)",
+      "O( sqrt(N) )",
+      "O( N^2 )",
+      "O( N )"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10365",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| RELUs are not monotonic, but sigmoids are monotonic. Statement 2| Neural networks trained with gradient descent with high probability converge to the global optimum.",
+    "options": [
+      "Statement 1 cannot be determined, Statement 2 is true",
+      "Statement 1 cannot be determined, Statement 2 is false",
+      "True, True",
+      "False, True"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10366",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| The Stanford Sentiment Treebank contained movie reviews, not book reviews. Statement 2| The Penn Treebank has been used for language modeling.",
+    "options": [
+      "True, True",
+      "False, Not Given",
+      "Not Given, False",
+      "Not Given, Not Given"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10367",
+    "source": "mmlu-pro-stratified",
+    "question": "Which is true about Batch Normalization?",
+    "options": [
+      "Batch Normalization eliminates the need for dropout in a neural network.",
+      "Batch Normalization makes the learning rate redundant.",
+      "Batch Normalization adjusts the weights of the network instead of the activations.",
+      "The bias parameter of affine layers becomes redundant if a batch normalization layer follows immediately afterward."
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10368",
+    "source": "mmlu-pro-stratified",
+    "question": "Which among them has the strongest wireless security?",
+    "options": [
+      "WEP",
+      "WPA-PSK",
+      "WEP+",
+      "WPA3"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10369",
+    "source": "mmlu-pro-stratified",
+    "question": "Encryption and decryption provide secrecy, or condentiality, but not",
+    "options": [
+      "Privacy",
+      "Anonymity",
+      "Integrity",
+      "Authentication"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10370",
+    "source": "mmlu-pro-stratified",
+    "question": "Encapsulating Security Payload (ESP) belongs to which Internet Security Protocol?",
+    "options": [
+      "Secure Http Protocol",
+      "Secure Socket Layer Protocol",
+      "Hypertext Transfer Protocol Secure",
+      "Secure IP Protocol"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10371",
+    "source": "mmlu-pro-stratified",
+    "question": "The bandwidth of an analog signal is 4kHz. An A/D converter is used to convert the signal from analog to digital. What is the minimum sampling rate for eliminating the aliasing problem? (in kHz)",
+    "options": [
+      "16",
+      "8",
+      "10",
+      "7"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10372",
+    "source": "mmlu-pro-stratified",
+    "question": "How many trees are there on 5 unlabeled vertices?",
+    "options": [
+      "10",
+      "12",
+      "7",
+      "3"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10373",
+    "source": "mmlu-pro-stratified",
+    "question": "Let a undirected graph G with edges E = {<0,2>, <2,4>, <3,4>, <1,4>}, which <A,B> represent Node A is connected to Node B. What is the minimum vertex cover of G if 0 is one of vertex cover? Represent the vertex cover in a list of ascending order.",
+    "options": [
+      "[0, 4]",
+      "[0, 1, 2]",
+      "[0, 2, 3]",
+      "[0, 1, 4]"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10374",
+    "source": "mmlu-pro-stratified",
+    "question": "Roughly how many bits are required on the average to describe to 3 digit accuracy the decay time (in years) of a radium atom if the half-life of radium is 80 years? Note that half-life is the median of the distribution.",
+    "options": [
+      "28",
+      "19",
+      "16",
+      "40"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10375",
+    "source": "mmlu-pro-stratified",
+    "question": "Maximize the entropy $H(X)$ of a non-negative integer-valued random variable $X$, taking values from 0 to infinity, subject to the constraint $E(X)=1$. Use base 2 logarithm to evaluate $H(X)$.",
+    "options": [
+      "3.0",
+      "5.0",
+      "2.5",
+      "2.0"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10376",
+    "source": "mmlu-pro-stratified",
+    "question": "In BASIC the RND function is used to generate a random number between 0 and 1. What statements would you use to: (a) generate integral random number between 0 and X - 1? (b) generate integral random number between 1 and X? (c) simulate the toss of a cubical die? (d) simulate a binary random choice taking values 1 or 2?",
+    "options": [
+      "(a) LET T = RND(X), (b) LET V = 1+RND(X), (c) LET W = 1+RND(6), (d) LET N = 1+RND(2)",
+      "(a) LET T = INT(RND/X), (b) LET V = INT(1 + RND/X), (c) LET W = INT(1 + RND/6), (d) LET N = INT(1 + RND/2)",
+      "(a) LET T = INT(X*RND), (b) LET V = INT(1 + X*RND), (c) LET W = INT(1 + 6*RND), (d) LET N = INT(1 + 2*RND)",
+      "(a) LET T = RND*(X-1), (b) LET V = 1 + RND*X, (c) LET W = 1 + RND*6, (d) LET N = 1 + RND*2"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10377",
+    "source": "mmlu-pro-stratified",
+    "question": "List the common types of registers used in the computer and statetheir purpose.",
+    "options": [
+      "Program Counter, Instruction Register, Memory Address Register, Memory Buffer Register, Accumulator, General Purpose Registers, Index Register, Condition Code Register, Stack Pointer",
+      "Input Register, Output Register, Cache Register, Buffer Register, Data Register",
+      "Address Register, Control Accumulator, Program Logic Register, Execution Pointer, Stack Buffer Register",
+      "Control Register, Status Register, Instruction Register, Program Counter"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10378",
+    "source": "mmlu-pro-stratified",
+    "question": "You have just received a Basic Assembler Language programyou ran. As you turn to the execution page to check theprintout, you find that every fourth line of the program reads, for example, PSW =... 00004F17B4C4. What is the PSW and what information does it provide? In addition, what informationis provided in the three lines following the PSW statement?",
+    "options": [
+      "PSW stands for Program Status Word. It contains the value of the location counter, system protection information, and program interrupt status. The three lines following the PSW statement display the contents of the system's registers at the time of interruption.",
+      "The three lines following the PSW statement are error codes.",
+      "PSW is a programming language used by the system.",
+      "PSW refers to Processor Status Word, indicating the processor's current tasks. The lines after detail the task queue."
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "-----",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10385",
+    "source": "mmlu-pro-stratified",
+    "question": "To compute the matrix product M_1M_2, where M_1 has p rows and q columns and where M_2 has q rows and r columns, takes time proportional to pqr, and the result is a matrix of p rows and r columns. Consider the product of three matrices N_1N_2N_3 that have, respectively, w rows and x columns, x rows and y columns, and y rows and z columns. Under what condition will it take less time to compute the product as (N_1N_2)N_3 (i.e., multiply the first two matrices first) than to compute it as N_1(N_2 N_3)?",
+    "options": [
+      "x < y",
+      "1/x + 1/z < 1/w + 1/y",
+      "w > z",
+      "1/w + 1/y > 1/x + 1/z"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10386",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following problems can be solved by a standard greedy algorithm?\nI. Finding a minimum spanning tree in an undirected graph with positive-integer edge weights\nII. Finding a maximum clique in an undirected graph\nIII. Finding a maximum flow from a source node to a sink node in a directed graph with positive-integer edge capacities",
+    "options": [
+      "III, and II, but not always I",
+      "I only",
+      "II only",
+      "III only"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10389",
+    "source": "mmlu-pro-stratified",
+    "question": "Neural networks:",
+    "options": [
+      "Can use a mix of different activation functions",
+      "Are incapable of handling non-linear relationships",
+      "None of the above",
+      "Can only use one type of activation function"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10390",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| After mapped into feature space Q through a radial basis kernel function, 1-NN using unweighted Euclidean distance may be able to achieve better classification performance than in original space (though we can’t guarantee this). Statement 2| The VC dimension of a Perceptron is smaller than the VC dimension of a simple linear SVM.",
+    "options": [
+      "Partly False, Partly True",
+      "True, Partly True",
+      "False, False",
+      "Partly True, Partly False"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10391",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| Highway networks were introduced after ResNets and eschew max pooling in favor of convolutions. Statement 2| DenseNets usually cost more memory than ResNets.",
+    "options": [
+      "False, True",
+      "True, True",
+      "Both statements are undetermined",
+      "The first statement is false, the second is partially true"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10393",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following tasks can be best solved using Clustering.",
+    "options": [
+      "Detecting fraudulent credit card transactions",
+      "Translating a text from one language to another",
+      "All of the above",
+      "Designing a website layout"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10397",
+    "source": "mmlu-pro-stratified",
+    "question": "The digest created by a hash function is normally called a",
+    "options": [
+      "Modication detection code (MDC)",
+      "Message digest",
+      "Message alteration detection",
+      "Modify authentication connection"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10399",
+    "source": "mmlu-pro-stratified",
+    "question": "What is the number of labelled forests on 10 vertices with 5 connected components, such that vertices 1, 2, 3, 4, 5 all belong to different connected components?",
+    "options": [
+      "30000",
+      "50000",
+      "70000",
+      "60000"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10401",
+    "source": "mmlu-pro-stratified",
+    "question": "For the signal f(t)=3sin(200πt)+ 6sin(400πt) + sin(500πt), determine the minimum sampling requency (in πHz) satisfying the Nyquist criterion.",
+    "options": [
+      "1000",
+      "500",
+      "700",
+      "600"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10402",
+    "source": "mmlu-pro-stratified",
+    "question": "Develop a FORTRAN subroutine that sorts a list of N elements and arranges them in ascending order.",
+    "options": [
+      "SUBROUTINE SORT (Y, N) DIMENSION Y (1) CY IS THE ARRAY TO BE SORTED N1 = N - 1 DO 10 I = 1, N1 J = I + 1 DO 20 K = J, N IF (Y (I).LT.Y (K)) GO TO 20 TEMP = Y (I) Y (I) = Y (K) Y (K) = TEMP 20CONTINUE 10CONTINUE RETURN END",
+      "SUBROUTINE SORT (Y, N) DIMENSION Y (N) DO 10 I = 1, N MAX = I DO 20 J = I+1, N IF (Y (J).GT.Y (MAX)) MAX = J 20 CONTINUE TEMP = Y (I) Y (I) = Y (MAX) Y (MAX) = TEMP 10 CONTINUE RETURN END",
+      "SUBROUTINE SORT (Y, N) DIMENSION Y (1) CY IS THE ARRAY TO BE SORTED N1 = N - 1 DO 10 I = 1, N1 J = I + 1 DO 20 K = J, N IF (Y (I).LE.Y (K)) GO TO 20 TEMP = Y (I) Y (I) = Y (K) Y (K) = TEMP 20CONTINUE 10CONTINUE RETURN END",
+      "SUBROUTINE SORT (Y, N) DIMENSION Y (1) DO 10 I = 1, N J = I + 1 DO 20 K = J, N IF (Y (I).GE.Y (K)) GO TO 20 TEMP = Y (I) Y (I) = Y (K) Y (K) = TEMP 20CONTINUE 10CONTINUE RETURN END"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10403",
+    "source": "mmlu-pro-stratified",
+    "question": "Write a BASIC program which converts inches to feet and inches.",
+    "options": [
+      "1\\O READ I 2\\O LET F = I/12 3\\O LET I1 = I - F\textasteriskcentered12 4\\O PRINT I \"INCHES = \"; F;\"FEET\"; I1; \"INCHES\" 45 GO TO 1\\O 5\\O DATA 9, 86, 47, 37, 947, 48\\O 6\\O END",
+      "1\\O READ I 2\\O LET F = INT(I/12) 3\\O LET I1 = F\textasteriskcentered12 - I 4\\O PRINT I \"INCHES = \"; F;\"FEET\"; I1; \"INCHES\" 45 GO TO 1\\O 5\\O DATA 9, 86, 47, 37, 947, 48\\O 6\\O END",
+      "1\\O READ I 2\\O LET F = INT(I/12) 3\\O LET I1 = I - F\textasteriskcentered12 4\\O PRINT I \"INCHES = \"; F;\"FEET\"; I1; \"INCHES\" 45 GO TO 1\\O 5\\O DATA 9, 86, 47, 37, 947, 48\\O 6\\O END",
+      "10 READ I 20 LET F = (I MOD 12) 30 LET I1 = I - F 40 PRINT I \"INCHES = \"; F;\"FEET\"; I1; \"INCHES\" 50 GO TO 10 60 DATA 9, 86, 47, 37, 947, 48 70 END"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10408",
+    "source": "mmlu-pro-stratified",
+    "question": "An online store uses 6-bit binary sequences to identify each unique item for sale. The store plans to increase the number of items it sells and is considering using 7-bit binary sequences. Which of the following best describes the result of using 7-bit sequences instead of 6- bit sequences?",
+    "options": [
+      "4 times as many items can be uniquely identified.",
+      "10 times as many items can be uniquely identified.",
+      "2 more items can be uniquely identified.",
+      "2 times as many items can be uniquely identified."
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "ori_mmlu-high_school_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10412",
+    "source": "mmlu-pro-stratified",
+    "question": "\"Magic memory\"' has two operations: Read and Clear. Both are indivisible and mutually exclusive. Clear sets the magic memory to zero. Read returns a value that represents the number of Read operations since the last Clear operation. Which of the following is (are) true of \"Magic memory\"?\nI. It can provide the functionality of an atomic Test-and-Set.\nII. It can be used to coordinate processes running on a shared-memory multiprocessor.\nIII. It is only useful on a multiprocessor.",
+    "options": [
+      "I and II",
+      "I and III",
+      "I, II and III",
+      "Only II and III"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10415",
+    "source": "mmlu-pro-stratified",
+    "question": "Consider the following grammar.\nS → ( S )\nS → x\nWhich of the following statements is (are) true?\nI. The grammar is ambiguous.\nII. The grammar is suitable for top-down parsing.\nIII. The grammar is suitable for bottom-up parsing.",
+    "options": [
+      "I, II, and III",
+      "I and III only",
+      "II and III only",
+      "III only and not II"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10418",
+    "source": "mmlu-pro-stratified",
+    "question": "Let M be a single-tape, deterministic Turing machine with tape alphabet {blank,0,1}, and let C denote the (possibly infinite) computation of M starting with a blank tape. The input to each problem below is M, together with a positive integer n. Which of the following problems is (are) decidable?\nI. The computation C lasts for at least n steps.\nII. The computation C lasts for at least n steps, and M prints a 1 at some point after the nth step.\nIII. M scans at least n distinct tape squares during the computation C.",
+    "options": [
+      "All are decidable",
+      "III only",
+      "I and III only",
+      "I only"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10421",
+    "source": "mmlu-pro-stratified",
+    "question": "Suppose your model is overfitting. Which of the following is NOT a valid way to try and reduce the overfitting?",
+    "options": [
+      "Improve the optimisation algorithm being used for error minimisation.",
+      "Add more noise to the training data.",
+      "Use the same data for training and testing.",
+      "Decrease the model complexity."
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10427",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following is a remote Trojan?",
+    "options": [
+      "BankerA",
+      "Game-Troj",
+      "Troya",
+      "DaCryptic"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10428",
+    "source": "mmlu-pro-stratified",
+    "question": "A session symmetric key between two parties is used",
+    "options": [
+      "Until the key is compromised",
+      "For a predetermined length of time",
+      "Only once",
+      "Conditions dependant"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10431",
+    "source": "mmlu-pro-stratified",
+    "question": "Consider Convolutional Neural Network D2 which takes input images of size 32x32 with 1 colour channels. The first layer of D2 uses 4 filters of size 5x5, a stride of 2, and zero-padding of width 1. Consider CNN D2 which takes input images of size 32x32 with 1 colour channels. The first layer of D2 uses 4 filters of size 5x5, a stride of 2, and zero-padding of width 1. What would be the total size of the flattened output vector from each filter?",
+    "options": [
+      "20",
+      "25",
+      "28",
+      "40"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10434",
+    "source": "mmlu-pro-stratified",
+    "question": "What is the number of labelled rooted forests on 6 vertices",
+    "options": [
+      "15000",
+      "14000",
+      "16807",
+      "13000"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10435",
+    "source": "mmlu-pro-stratified",
+    "question": "A remote database contains 30 seconds of color motion-video. The video sequence is of the format (352 ́288 pixels) with RGB digitization at 30 frames per second. Find the the data rate for this motion-video in Mbits/s (3 sig. fig.).",
+    "options": [
+      "85.3",
+      "82.5",
+      "78.4",
+      "69.6"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10438",
+    "source": "mmlu-pro-stratified",
+    "question": "State the basic laws of Boolean algebra.",
+    "options": [
+      "The basic laws of Boolean algebra are Idempotent, Non-Commutative, Associative, and Exclusive OR",
+      "The basic laws of Boolean algebra are Idempotent, Commutative, Associative, Distributive, Law of Union, Law of Intersection, Double Negative Law or Involution Law, Law of complement and deMorgan's law",
+      "The basic laws of Boolean algebra are Associative, Distributive, Commutative, and Identity",
+      "The basic laws of Boolean algebra consist of the Law of Excluded Middle, Law of Non-Contradiction, and Law of Identity"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10440",
+    "source": "mmlu-pro-stratified",
+    "question": "Obtain the 15's and 16's complement of the following hexadecimalnumbers: a) FFOb) 1234c) ABCDd) 0000",
+    "options": [
+      "a) 010, b) EDBA, c) 5430, d) FFF1",
+      "a) 010, b) EECB, c) 6543, d) 000F",
+      "a) 00F, b) EDCB, c) 5432, d) FFFF",
+      "a) 010, b) EDCC, c) 5433, d) 10000"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10444",
+    "source": "mmlu-pro-stratified",
+    "question": "A sorted list of numbers contains 500 elements. Which of the following is closest to the maximum number of list elements that will be examined when performing a binary search for a value in the list?",
+    "options": [
+      "500",
+      "10",
+      "250",
+      "700"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "ori_mmlu-high_school_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10445",
+    "source": "mmlu-pro-stratified",
+    "question": "Mergesort works by splitting a list of n numbers in half, sorting each half recursively, and merging the two halves. Which of the following data structures will allow mergesort to work in O(n log n) time?\nI. A singly linked list\nII. A doubly linked list\nIII. An array",
+    "options": [
+      "I, II, and III",
+      "I and II only",
+      "nan",
+      "III only"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10448",
+    "source": "mmlu-pro-stratified",
+    "question": "Assume that a debugger places a breakpoint at a load instruction at virtual address 0x77E81234 (hexadecimal notation) in a debugged process P. If the text segment of P begins at 0x77E80000 in P’s virtual address space and if the debugger has mapped this same text segment at 0x01000000 in its virtual address space, which of the following is the virtual address used by the debugger in its WRITE operation, along with a description of how the debugger has mapped the virtual memory page containing this address?",
+    "options": [
+      "0x76E81234; page mapped with READ/WRITE access",
+      "0x01001234; page mapped with READ/WRITE access",
+      "0x77E81234; page mapped with COPY-ON-WRITE access",
+      "0x76E81234; page mapped with READ-ONLY access"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10450",
+    "source": "mmlu-pro-stratified",
+    "question": "Let G = (V, E) be a connected, undirected graph, and let a and b be two distinct vertices in V. Let P_1 be the problem of finding a shortest simple path between a and b, and let P_2 be the problem of finding a longest simple path between a and b. Which of the following statements about P_1 and P_2 is true?",
+    "options": [
+      "P_1 can be solved in polynomial time but P_2 is not known to be solvable in polynomial time.",
+      "Both P_1 and P_2 are known to not be solvable in polynomial time.",
+      "It is known that either P_1 or P_2 can be solved in polynomial time.",
+      "P_1 is known to not be solvable in polynomial time but P_2 can be solved in polynomial time."
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10451",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| Linear regression estimator has the smallest variance among all unbiased estimators. Statement 2| The coefficients α assigned to the classifiers assembled by AdaBoost are always non-negative.",
+    "options": [
+      "False, False",
+      "True, False",
+      "The first statement is sometimes true, False",
+      "False, True"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10456",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| Industrial-scale neural networks are normally trained on CPUs, not GPUs. Statement 2| The ResNet-50 model has over 1 billion parameters.",
+    "options": [
+      "False, False for ResNet-152 model only",
+      "False, True",
+      "False, False",
+      "True, True"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10458",
+    "source": "mmlu-pro-stratified",
+    "question": "An integer overflow occurs when",
+    "options": [
+      "an integer is used as if it was a pointer",
+      "an integer is used to access a buffer outside of the buffer's bounds",
+      "there is no more space to hold integers in the program",
+      "an integer expression's result \"wraps around\"; instead of creating a very large number, a very small (or negative) number ends up getting created"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10461",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following is not an example of presentation layer issues?",
+    "options": [
+      "Unintentional or ill-directed use of superficially supplied input",
+      "Weak or non-existent authentication mechanisms",
+      "Poor handling of unexpected input can lead to the execution of arbitrary instructions",
+      "Cryptographic flaws in the system may get exploited to evade privacy"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10462",
+    "source": "mmlu-pro-stratified",
+    "question": "How many labeled graphs with a score of (6, 2, 2, 2, 2, 2, 2) are there?",
+    "options": [
+      "15",
+      "24",
+      "30",
+      "35"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10463",
+    "source": "mmlu-pro-stratified",
+    "question": "Suppose that feedback is used on a binary symmetric channel with parameter $p=0.5$. Each time a $Y$ is received, it becomes the next transmission. Thus $X_1$ is Bern(1/2), $X_2=Y_1$, $X_3=Y_2$, \\ldots, X_n=Y_{n-1}. Find $\\lim_{n\\to\\infty} \\frac{1}{n} I(X_n;Y_n)$ in bits.",
+    "options": [
+      "0.0",
+      "1.0",
+      "0.9",
+      "0.5"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10464",
+    "source": "mmlu-pro-stratified",
+    "question": "Consider the discrete memoryless channel $Y=XZ$ where $X$ and $Z$ are independent binary random variables that take on values 0 and 1. Let $P(Z=1)=0.5$. Find the capacity of this channel in bits.",
+    "options": [
+      "0.585",
+      "1.322",
+      "0.322",
+      "0.750"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10467",
+    "source": "mmlu-pro-stratified",
+    "question": "Explain and discuss why the branch and link register (BALR) instruction is usually one of the most important instruc-tions of the IBM/360-370 computers?",
+    "options": [
+      "BALR instruction is important because it directly manipulates arithmetic operations.",
+      "BALR instruction is important because it allows for base address loading into the base register of the program, which is crucial for the program's execution.",
+      "BALR instruction is important because it reduces memory usage.",
+      "BALR instruction is important because it increases the graphical processing capabilities of the computer."
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "----",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10471",
+    "source": "mmlu-pro-stratified",
+    "question": "Given the function f(x,y,z) below, write f(x,y,z) as a product ofmaxterms. f(x,y,z) = (z +x) (y +z) (x + y + z) (x+y)",
+    "options": [
+      "f(x,y,z) = ΠM(0,1,2,3,7)",
+      "f(x,y,z) = ΠM(0,3,4,5,6)",
+      "f(x,y,z) = ΠM(2,3,4,5,6)",
+      "f(x,y,z) = ΠM(0,1,4,5,6,7)"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10473",
+    "source": "mmlu-pro-stratified",
+    "question": "Briefly discuss the major functional unit of the Central Processing Unit (CPU).",
+    "options": [
+      "The CPU consists of three major functional units: Control Unit (CU), Cache Memory, and Internal Storage Unit (ISU).",
+      "The CPU consists of three major functional units: Control Unit (CU), Arithmetic Control Unit (ALU), and Internal Storage Unit (ISU).",
+      "The CPU consists of two major functional units: Arithmetic Control Unit (ALU) and Cache Memory.",
+      "The CPU consists of two major functional units: Control Unit (CU) and Arithmetic Control Unit (ALU)."
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10474",
+    "source": "mmlu-pro-stratified",
+    "question": "Digital images are often represented by the red, green, and blue values (an RGB triplet) of each individual pixel in the image. A photographer is manipulating a digital image and overwriting the original image. Which of the following describes a lossless transformation of the digital image?",
+    "options": [
+      "Creating the negative of an image by creating a new RGB triplet for each pixel in which each value is calculated by subtracting the original value from 255. The negative of an image is reversed from the original; light areas appear dark, and colors are reversed.",
+      "Enhancing the image by adjusting the contrast, brightness and saturation, which may alter the original pixel values.",
+      "Applying a filter to the image that changes the color balance, resulting in a different color representation.",
+      "Creating a sepia toned version of the image by applying a certain formula to the RGB values of each pixel."
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-high_school_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10478",
+    "source": "mmlu-pro-stratified",
+    "question": "The procedure below is intended to display the index in a list of unique names (nameList) where a particular name (targetName) is found. lf targetName is not found in nameList, the code should display 0.\n PROCEDURE FindName (nameList, targetName)\n {\n  index ← 0\n  FOR EACH name IN nameList\n  {\n   index ← index + 1\n   IF (name = targetName)\n   {\n   foundIndex ← index\n   }\n   ELSE\n   {\n   foundIndex ← 0\n   }\n  }\n  DISPLAY (foundIndex)\n }\n Which of the following procedure calls can be used to demonstrate that the procedure does NOT Work as intended?",
+    "options": [
+      "FindName ([\"Andrea\", \"Ben\", \"Chris\", \"Diane\", \"Eva\", \"Frank\", \"Grace\", \"Hannah\"], \"Hannah\" )",
+      "FindName ([\"Andrea\", \"Ben\"], \"Ben\" )",
+      "FindName ([\"Andrea\", \"Ben\", \"Chris\", \"Diane\", \"Eva\", \"Frank\"], \"Frank\" )",
+      "FindName ([\"Andrea\", \"Ben\", \"Chris\"], \"Ben\")"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "ori_mmlu-high_school_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10479",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following statements about floating-point arithmetic is NOT true?",
+    "options": [
+      "Associativity can be achieved with appropriate roundoff conventions.",
+      "It is inherently nonassociative because there have to be upper and lower bounds on the size of numbers.",
+      "Some rational numbers have no exact representation.",
+      "All operations in floating-point arithmetic are commutative."
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10484",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following considerations applies (apply) to choosing the page size in a paging system?\nI. An advantage of larger pages is that they lead to smaller page tables.\nII. An advantage of smaller pages is that they lead to less waste due to internal fragmentation.\nIII. Normally, the dominant factor in disk access time is not dependent on page length, so longer pages can be used advantageously.",
+    "options": [
+      "I, II, and III",
+      "Only III and I apply, not II",
+      "None of the above considerations apply",
+      "II only"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10486",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| For a continuous random variable x and its probability distribution function p(x), it holds that 0 ≤ p(x) ≤ 1 for all x. Statement 2| Decision tree is learned by minimizing information gain.",
+    "options": [
+      "Statement 1 is a fundamental principle of statistics, Statement 2 is a rule of thumb in decision analysis",
+      "True, True",
+      "False, False",
+      "Statement 1 is a property of all random variables, Statement 2 is a heuristic used in artificial intelligence"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10487",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| The set of all rectangles in the 2D plane (which includes non axisaligned rectangles) can shatter a set of 5 points. Statement 2| The VC-dimension of k-Nearest Neighbour classifier when k = 1 is infinite.",
+    "options": [
+      "True, Not enough information",
+      "True, True",
+      "True, Depends on the dataset",
+      "False, True"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10488",
+    "source": "mmlu-pro-stratified",
+    "question": "For a neural network, which one of these structural assumptions is the one that most affects the trade-off between underfitting (i.e. a high bias model) and overfitting (i.e. a high variance model):",
+    "options": [
+      "The learning rate",
+      "The initial choice of weights",
+      "The number of hidden nodes",
+      "The choice of activation function"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10493",
+    "source": "mmlu-pro-stratified",
+    "question": "Which one of the following is equal to P(A, B, C) given Boolean random variables A, B and C, and no independence or conditional independence assumptions between any of them?",
+    "options": [
+      "P(A, B, C | D) * P(D)",
+      "P(A, B | C) * P(C)",
+      "P(A | B, C) * P(B | A, C) * P(C | A, B)",
+      "P(A | B) * P(B | C) * P(C)"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10495",
+    "source": "mmlu-pro-stratified",
+    "question": "What does EXE do when the STP solver times out on a constraint query for a particular path?",
+    "options": [
+      "Assume that the query is satisfiable and continue executing the path.",
+      "Pause the execution until the query is resolved.",
+      "Assume that the query is not satisfiable and stop executing the path",
+      "Assume that the query is satisfiable and stop executing the path."
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10496",
+    "source": "mmlu-pro-stratified",
+    "question": "What tool can be used to perform SNMP enumeration?",
+    "options": [
+      "DNSlookup",
+      "Tcpdump",
+      "Traceroute",
+      "IP Network Browser"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10497",
+    "source": "mmlu-pro-stratified",
+    "question": "Suppose there are three routers between a source host and a destination host. Ignoring fragmentation, an IP datagram sent from the source host to the destination host will travel over how many interfaces? How many forwarding tables will be indexed to move the datagram from the source to the destination? Answer in [Interfaces, Tables].",
+    "options": [
+      "[5, 3]",
+      "[8, 3]",
+      "[8, 4]",
+      "[9, 5]"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10498",
+    "source": "mmlu-pro-stratified",
+    "question": "How many distinct directed trees can be constructed from a undirected tree with 100 nodes?",
+    "options": [
+      "100",
+      "10000",
+      "150",
+      "200"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10506",
+    "source": "mmlu-pro-stratified",
+    "question": "What is the output of the following program? PROGRAM TEST (output); VAR I, J, K, COUNT : integer; BEGIN I: = 1; J: = 2; K: = 3; count: = 1; write1n (I div J, K mod J); while count < = 3 DO BEGIN If I < J then If K > J then If (K > I) or (I = J) then write1n (I) ELSE write1n (J) ELSE write1n (K); CASE COUNT OF 1: J: = 0; 2: BEGIN K: = K - 1; J: = J + K END; 3:I: = 2 \\textasteriskcentered I; END; count : = count + 1; END {while count........} END.",
+    "options": [
+      "1 0",
+      "0 2",
+      "2 1",
+      "1 2"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10516",
+    "source": "mmlu-pro-stratified",
+    "question": "In the NoNicks operating system, the time required by a single file-read operation has four nonoverlapping components:\ndisk seek time-25 msec\ndisk latency time-8 msec\ndisk transfer time- 1 msec per 1,000 bytes\noperating system overhead-1 msec per 1,000 bytes + 10 msec\nIn version 1 of the system, the file read retrieved blocks of 1,000 bytes. In version 2, the file read (along with the underlying layout on disk) was modified to retrieve blocks of 4,000 bytes. The ratio of-the time required to read a large file under version 2 to the time required to read the same large file under version 1 is approximately",
+    "options": [
+      "1:2.5",
+      "1.1:1",
+      "1:2",
+      "1:3.5"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10521",
+    "source": "mmlu-pro-stratified",
+    "question": "Which of the following statements about a remote procedure call is true?",
+    "options": [
+      "It cannot call procedures implemented in a different language.",
+      "It cannot return a value.",
+      "It cannot pass parameters by reference.",
+      "It is used to call procedures with addresses that are farther than 2^16 bytes away."
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10524",
+    "source": "mmlu-pro-stratified",
+    "question": "Consider the Bayesian network given below. How many independent parameters are needed for this Bayesian Network H -> U <- P <- W?",
+    "options": [
+      "14",
+      "8",
+      "10",
+      "12"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10527",
+    "source": "mmlu-pro-stratified",
+    "question": "Suppose we like to calculate P(H|E, F) and we have no conditional independence information. Which of the following sets of numbers are sufficient for the calculation?",
+    "options": [
+      "P(E, F), P(E|H), P(F|H)",
+      "P(H), P(E|H), P(F|H)",
+      "P(E, F), P(H|E), P(F|H)",
+      "P(E, F), P(H), P(E, F|H)"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "---",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10528",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| PCA and Spectral Clustering (such as Andrew Ng’s) perform eigendecomposition on two different matrices. However, the size of these two matrices are the same. Statement 2| Since classification is a special case of regression, logistic regression is a special case of linear regression.",
+    "options": [
+      "Neither true nor false, True",
+      "False, False",
+      "False, Neither true nor false",
+      "True, False"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10532",
+    "source": "mmlu-pro-stratified",
+    "question": "_______________ is a popular tool used for network analysis in multiprotocol diverse network.",
+    "options": [
+      "EtterPeak",
+      "SuperScan",
+      "Snort",
+      "NetStumbler"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "+++++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10535",
+    "source": "mmlu-pro-stratified",
+    "question": "A network with one primary and four secondary stations uses polling. The size of a data frame is 1000 bytes. The size of the poll, ACK, and NAK frames are 32 bytes each. Each station has 5 frames to send. How many total bytes are exchanged if each station can send only one frame in response to a poll?",
+    "options": [
+      "26000",
+      "25000",
+      "20500",
+      "21536"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "--",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10540",
+    "source": "mmlu-pro-stratified",
+    "question": "Let $X \\sim N(0,1)$ and let the distortion measure be squared error. Here we do not allow block descriptions. Compute the minimum expected distortion for one bit quantization of $X$ using a squared error distortion measure.",
+    "options": [
+      "0.363",
+      "0.498",
+      "0.625",
+      "0.411"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "-",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10541",
+    "source": "mmlu-pro-stratified",
+    "question": "What is the output of the following program? main ( ) { intx = 5; inty = 5; printf(\"%d%d\\textbackslashn\", x++, x); printf(\"%d%d\\textbackslashn\", ++y, y); }",
+    "options": [
+      "65, 56",
+      "55, 66",
+      "66, 55",
+      "56, 65"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10552",
+    "source": "mmlu-pro-stratified",
+    "question": "For all strings x, the function x^M is defined recursively as follows.\ne^M= e, and\nif w is a string and a is a string with length 1, then\n(aw)^M = aw^Ma.\nLet a be a string with length 1, and let x and y be arbitrary strings. Which of the following is true?",
+    "options": [
+      "(ax)^M = (xa)^M",
+      "a^M = a",
+      "(xy)^M = y^Mx^M",
+      "None of the above"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10555",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| The back-propagation algorithm learns a globally optimal neural network with hidden layers. Statement 2| The VC dimension of a line should be at most 2, since I can find at least one case of 3 points that cannot be shattered by any line.",
+    "options": [
+      "False, False",
+      "False, True",
+      "True, True",
+      "True, False"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10558",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| The maximum margin decision boundaries that support vector machines construct have the lowest generalization error among all linear classifiers. Statement 2| Any decision boundary that we get from a generative model with classconditional Gaussian distributions could in principle be reproduced with an SVM and a polynomial kernel of degree less than or equal to three.",
+    "options": [
+      "True, False only for high dimensional data",
+      "True, True only for 2D data",
+      "False, True only for linearly separable data",
+      "False, True"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10563",
+    "source": "mmlu-pro-stratified",
+    "question": "The AH Protocol provides source authentication and data integrity, but not",
+    "options": [
+      "Integrity",
+      "Confidentiality",
+      "Privacy",
+      "Nonrepudiation"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10567",
+    "source": "mmlu-pro-stratified",
+    "question": "Let F: K \\times R \\to MF:K×R→M be a secure PRF. For m \\in Mm∈M define E(k,m) = \\big[ r \\gets R,\\ \\text{output } \\big(r,\\ F(k,r) \\oplus m\\big)\\ \\big]E(k,m)=[r←R, output (r, F(k,r)⊕m) ] Is EE symantically secure under CPA?",
+    "options": [
+      "Yes, but only if R is large enough so r never repeats (w.h.p)",
+      "No, unless F is a weak PRF",
+      "No, unless F is a strong PRF",
+      "It depends on the size of R"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10568",
+    "source": "mmlu-pro-stratified",
+    "question": "Can a stream cipher have perfect secrecy?",
+    "options": [
+      "Yes, if the stream cipher is implemented correctly",
+      "Yes, if the PRG is really “secure”",
+      "Yes, if the key is used only once",
+      "No, since the key is shorter than the message"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10569",
+    "source": "mmlu-pro-stratified",
+    "question": "Suppose Unix did not provide a way of passing file descriptors between processes, but still allowed inheriting file descriptors from a parent on fork and exec. What aspects of the OKWS design would break without file descriptor passing?\n1. It would be impossible for services to send messages to oklogd.\n2. It would be impossible for services to get a TCP connection to a database proxy.",
+    "options": [
+      "True, False",
+      "False, False",
+      "False, True",
+      "True, True"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10570",
+    "source": "mmlu-pro-stratified",
+    "question": "Consider Convolutional Neural Network D2 which takes input images of size 32x32 with 1 colour channels. The first layer of D2 uses 4 filters of size 5x5, a stride of 2, and zero-padding of width 1. Consider CNN D2 which takes input images of size 32x32 with 1 colour channels. The first layer of D2 uses 4 filters of size 5x5, a stride of 2, and zero-padding of width 1. What is the total number of weights defined for the entire activation output of this first layer? (ie. If you flattened all filters and channels into a single vector)",
+    "options": [
+      "600",
+      "700",
+      "900",
+      "1300"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10571",
+    "source": "mmlu-pro-stratified",
+    "question": "Given an image $$ \\begin{array}{llllllll} 6 & 5 & 6 & 7 & 7 & 7 & 7 & 7 \\\\ 7 & 7 & 7 & 7 & 6 & 7 & 7 & 7 \\\\ 8 & 8 & 8 & 6 & 5 & 5 & 6 & 7 \\\\ 8 & 8 & 8 & 6 & 4 & 3 & 5 & 7 \\\\ 7 & 8 & 8 & 6 & 3 & 3 & 4 & 6 \\\\ 7 & 8 & 8 & 6 & 4 & 3 & 4 & 6 \\\\ 8 & 8 & 8 & 7 & 5 & 5 & 5 & 5 \\\\ 8 & 9 & 9 & 8 & 7 & 6 & 6 & 4 \\end{array} $$ . Find an appropriate threshold for thresholding the following image into 2 regions using the histogram.",
+    "options": [
+      "6.25",
+      "7.50",
+      "5.00",
+      "6.75"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10573",
+    "source": "mmlu-pro-stratified",
+    "question": "A Chord based distributed hash table (DHT) with 26 address space is used in a peer- to-peer file sharing network. There are currently 10 active peers in the network with node ID N1, N11, N15, N23, N31, N40, N45, N51, N60, and N63. Show all the target key (in ascending order, ignore the node's identifier itself) for N1.",
+    "options": [
+      "[13, 26, 39, 52, 65, 78]",
+      "[2, 3, 5, 9, 17, 33]",
+      "[5, 10, 20, 30, 40, 50]",
+      "[7, 14, 28, 56, 63, 70]"
+    ],
+    "answer": "B",
+    "answer_index": 1,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10579",
+    "source": "mmlu-pro-stratified",
+    "question": "A PL/I program uses the EDIT form of input. The declare statementof the program is as follows: DCL(A,B,C,D,E,F) FIXED(5,2) ; GCHAR(15)VAR, H CHAR(4) ; A data card used by the program has the following informationpunched on it (Note: The symbolbdenotes a blankspace). \\downarrowcol.8\\downarrowcol.34 AB-123 \\textbullet 45b123 \\textbullet 459123 \\textbullet 456bb12345b18 \\textbullet b 345912345B2GbCARS CARS CARS Show what will be stored in the memory locations correspond-ingto A, B, C, D, E, F, G and H when the followingstatement is executed: GETEDIT(A, B, C, D, E, F, G, H) [COL(10), F(7, 2), F(7, 2), X(2), F(4, 1), COL(34), F(5, 2), X(1), F(6, 3), F(1, 1), X(5), A(3), X(1), A(4)];",
+    "options": [
+      "A -123.45, B 123.45, C 023.40, D 123.45, E 011.83, F 000.90, G 2BG, H CRSA",
+      "A -123.45, B 123.45, C 123.40, D 023.45, E 011.83, F 000.90, G B2G, H CARS",
+      "A -123.45, B 123.45, C 023.40, D 123.45, E 011.83, F 000.90, G B2G, H CARS",
+      "A -123.45, B 123.45, C 912.34, D 023.45, E 345.91, F 234.52, G BG2, H ACAR"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10589",
+    "source": "mmlu-pro-stratified",
+    "question": "The language {ww | w in (0 + 1)*} is",
+    "options": [
+      "regular, but not context-free",
+      "accepted by some Turing machine and some pushdown automaton",
+      "accepted by some pushdown automaton, but not context-free",
+      "accepted by some Turing machine, but by no pushdown automaton"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "ori_mmlu-college_computer_science"
+  },
+  {
+    "id": "mmlu_pro_10599",
+    "source": "mmlu-pro-stratified",
+    "question": "The disadvantage of Grid search is",
+    "options": [
+      "It is hard to implement.",
+      "It is not suitable for datasets with a large number of features.",
+      "It runs reasonably slow for multiple linear regression.",
+      "It can only be used for binary classification problems."
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "++++",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10615",
+    "source": "mmlu-pro-stratified",
+    "question": "Write a FORTRAN program segment to compute values of the POISSON distribution given by P(X) = e^-mm^x/x! Assume (1) that X and m are integer variables; (2) that X and m are small enough that no term will exceed the size permitted for a real variable in your computer; and (3) that the function FACT (n) for computing n! is available.",
+    "options": [
+      "FUNCTION P(X,M) INTEGER X Y = FLOAT (M) P = EXP(Y) * M ** X / FACT (X) RETURN END",
+      "FUNCTION P(X,M) INTEGER X, M P = EXP(-M) / (M ** X * FACT(X)) RETURN END",
+      "FUNCTION P(X,M) REAL X Y = FLOAT(M) P = EXP(-Y) * Y ** X RETURN END",
+      "FUNCTION P(X,M) INTEGER X Y = FLOAT (M) P = EXP(-Y) * M ** X / FACT (X) RETURN END"
+    ],
+    "answer": "D",
+    "answer_index": 3,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "stemez-ComputerScience"
+  },
+  {
+    "id": "mmlu_pro_10632",
+    "source": "mmlu-pro-stratified",
+    "question": "Statement 1| Maximizing the likelihood of logistic regression model yields multiple local optimums. Statement 2| No classifier can do better than a naive Bayes classifier if the distribution of the data is known.",
+    "options": [
+      "Both Statements are partially true",
+      "True, False",
+      "False, False",
+      "Both statements are not known"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+",
+    "original_source": "ori_mmlu-machine_learning"
+  },
+  {
+    "id": "mmlu_pro_10637",
+    "source": "mmlu-pro-stratified",
+    "question": "Let HH be a Merkle-Damgard hash function is H:X^{\\leq L} \\to TH:X^≤L  →T. Construct a MAC from this HH as follows: \\ \\ S(k,m) = H(k \\| m)  S(k,m)=H(k∥m). This mac is insecure because:",
+    "options": [
+      "Given H(k \\| m)H(k∥m) anyone can compute H(w \\| k \\| m \\| \\text{PB})H(w∥k∥m∥PB) for any ww",
+      "Anyone can compute H( k \\| m )H(k∥m) for any mm",
+      "Given H(k \\| m)H(k∥m) anyone can compute H(k \\| m \\| \\text{PB} \\| w)H(k∥m∥PB∥w) for any ww",
+      "Given H(k \\| m)H(k∥m) anyone can compute H(k \\| m \\| w)H(k∥m∥w) for any ww"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "+++",
+    "original_source": "ori_mmlu-computer_security"
+  },
+  {
+    "id": "mmlu_pro_10646",
+    "source": "mmlu-pro-stratified",
+    "question": "Consider an additive white Gaussian noise channel with an expected output power constraint $P=2$. Thus $Y = X + Z$, $Z \\sim N(0, 1)$, $Z$ is independent of $X$, and $E(Y)^2 \\leq 2$. Find the channel capacity in bits.",
+    "options": [
+      "2.5",
+      "4",
+      "0.5",
+      "2"
+    ],
+    "answer": "C",
+    "answer_index": 2,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "theoremQA-EECS"
+  },
+  {
+    "id": "mmlu_pro_10654",
+    "source": "mmlu-pro-stratified",
+    "question": "Let P be a procedure that for some inputs calls itself (i.e., is recursive). If P is guaranteed to terminate, which of the following statements must be true?\nI. P has a local variable.\nII. P has an execution path where it does not call itself.\nIII. P either refers to a global variable or has at least one parameter.",
+    "options": [
+      "II and III only",
+      "I and III only",
+      "I and II only",
+      "I, II and III"
+    ],
+    "answer": "A",
+    "answer_index": 0,
+    "category": "computer science",
+    "difficulty": "++",
+    "original_source": "ori_mmlu-college_computer_science"
+  }
+]

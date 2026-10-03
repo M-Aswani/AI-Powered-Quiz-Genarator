@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI-Powered Quiz Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ==========================================
+           HOME PAGE
+           ========================================== */
+
+        .home-box {
+            max-width: 500px;
+        }
+
+        /* ==========================================
+           AI ROBOT
+           ========================================== */
+
+        .robot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-bottom: 10px;
+        }
+
+        .robot {
+            width: 115px;
+            height: 115px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #ffffff,
+                #dbeafe
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 65px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.25);
+
+            border: 4px solid
+                rgba(255, 255, 255, 0.7);
+
+            animation: robotFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes robotFloat {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-6px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+
+        /* ==========================================
+           WELCOME
+           ========================================== */
+
+        #welcomeMessage {
+
+            margin-top: 15px;
+
+            margin-bottom: 12px;
+
+            font-size: 25px;
+
+        }
+
+        .home-description {
+
+            color: #eeeeee;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        /* ==========================================
+           HOME BUTTONS
+           ========================================== */
+
+        .home-button {
+
+            width: 100%;
+
+            padding: 14px;
+
+            margin-bottom: 15px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+
+        }
+
+
+        .start-button {
+
+            background: linear-gradient(
+                135deg,
+                #ff6a88,
+                #ff8e53
+            );
+
+            box-shadow:
+                0 8px 20px
+                rgba(255, 106, 136, 0.3);
+
+        }
+
+
+        .history-button {
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #0072ff
+            );
+
+            box-shadow:
+                0 8px 20px
+                rgba(0, 114, 255, 0.3);
+
+        }
+
+
+        .home-button:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 25px
+                rgba(0, 0, 0, 0.25);
+
+        }
+
+
+        /* ==========================================
+           HISTORY
+           ========================================== */
+
+        #historySection {
+
+            margin-top: 30px;
+
+        }
+
+        .history-title {
+
+            font-size: 22px;
+
+            margin-bottom: 18px;
+
+        }
+
+        .history-card {
+
+            background:
+                rgba(255, 255, 255, 0.15);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.25);
+
+            border-radius: 14px;
+
+            padding: 18px;
+
+            margin-bottom: 12px;
+
+            text-align: left;
+
+            box-shadow:
+                0 6px 18px
+                rgba(0, 0, 0, 0.2);
+
+        }
+
+        .history-card strong {
+
+            font-size: 17px;
+
+        }
+
+        .history-card p {
+
+            margin: 7px 0;
+
+            font-size: 14px;
+
+            color: #eeeeee;
+
+        }
+
+        .pass-result {
+
+            color: #7cff9b;
+
+            font-weight: bold;
+
+        }
+
+        .fail-result {
+
+            color: #ff8585;
+
+            font-weight: bold;
+
+        }
+
+
+        /* ==========================================
+           LOGOUT
+           ========================================== */
+
+        .logout-link {
+
+            display: inline-block;
+
+            margin-top: 12px;
+
+            padding: 8px 18px;
+
+            border-radius: 20px;
+
+            color: white;
+
+            text-decoration: none;
+
+            background:
+                rgba(255, 255, 255, 0.12);
+
+            transition: 0.3s;
+
+        }
+
+        .logout-link:hover {
+
+            background:
+                rgba(255, 255, 255, 0.25);
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="auth-container">
+
+        <div class="auth-box home-box">
+
+
+            <!-- ==================================
+                 AI ROBOT
+                 ================================== -->
+
+            <div class="robot-container">
+
+                <div class="robot">
+                    🤖
+                </div>
+
+            </div>
+
+
+            <!-- ==================================
+                 PROJECT TITLE
+                 ================================== -->
+
+            <h1>
+                AI-Powered Quiz Generator
+            </h1>
+
+
+            <p class="tagline">
+                Smart Quiz Platform
+            </p>
+
+
+            <!-- ==================================
+                 WELCOME MESSAGE
+                 ================================== -->
+
+            <h2 id="welcomeMessage">
+                Welcome!
+            </h2>
+
+
+            <p class="home-description">
+
+                Test and improve your Computer Science
+                knowledge with interactive
+                AI-powered quizzes.
+
+            </p>
+
+
+            <!-- ==================================
+                 START TEST
+                 ================================== -->
+
+            <button
+                id="startTestBtn"
+                class="home-button start-button"
+            >
+
+                🚀 Start Test
+
+            </button>
+
+
+            <!-- ==================================
+                 HISTORY
+                 ================================== -->
+
+            <button
+                id="historyBtn"
+                class="home-button history-button"
+            >
+
+                📊 View Test History
+
+            </button>
+
+
+            <!-- History appears here -->
+
+            <div id="historySection"></div>
+
+
+            <!-- ==================================
+                 LOGOUT
+                 ================================== -->
+
+            <p class="account-text">
+
+                <a
+                    href="#"
+                    id="logoutBtn"
+                    class="logout-link"
+                >
+
+                    🚪 Logout
+
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        // ==========================================
+        // GET LOGGED-IN USER
+        // ==========================================
+
+        const studentName =
+            localStorage.getItem(
+                "student_name"
+            );
+
+
+        // ==========================================
+        // CHECK LOGIN
+        // ==========================================
+
+        if (!studentName) {
+
+            window.location.href =
+                "login.html";
+
+        } else {
+
+            document
+                .getElementById(
+                    "welcomeMessage"
+                )
+                .textContent =
+                "Welcome, " + studentName + "!";
+
+        }
+
+
+        // ==========================================
+        // START TEST
+        // ==========================================
+
+        document
+            .getElementById(
+                "startTestBtn"
+            )
+            .addEventListener(
+                "click",
+                function () {
+
+                    window.location.href =
+                        "quiz.html";
+
+                }
+            );
+
+
+        // ==========================================
+        // VIEW TEST HISTORY
+        // ==========================================
+
+        document
+            .getElementById(
+                "historyBtn"
+            )
+            .addEventListener(
+                "click",
+                async function () {
+
+                    try {
+
+                        const response =
+                            await fetch(
+                                "http://127.0.0.1:8000/history/"
+                                +
+                                encodeURIComponent(
+                                    studentName
+                                )
+                            );
+
+
+                        if (!response.ok) {
+
+                            throw new Error(
+                                "Unable to load history."
+                            );
+
+                        }
+
+
+                        const history =
+                            await response.json();
+
+
+                        const historySection =
+                            document.getElementById(
+                                "historySection"
+                            );
+
+
+                        historySection.innerHTML =
+                            "";
+
+
+                        const heading =
+                            document.createElement(
+                                "h3"
+                            );
+
+
+                        heading.textContent =
+                            "📚 Test History";
+
+
+                        heading.className =
+                            "history-title";
+
+
+                        historySection.appendChild(
+                            heading
+                        );
+
+
+                        if (
+                            history.length === 0
+                        ) {
+
+                            const message =
+                                document.createElement(
+                                    "p"
+                                );
+
+
+                            message.textContent =
+                                "No test history found.";
+
+
+                            message.style.color =
+                                "#eeeeee";
+
+
+                            historySection.appendChild(
+                                message
+                            );
+
+
+                            return;
+
+                        }
+
+
+                        // Display every test
+
+                        history.forEach(
+                            function (
+                                item,
+                                index
+                            ) {
+
+                                const resultBox =
+                                    document.createElement(
+                                        "div"
+                                    );
+
+
+                                resultBox.className =
+                                    "history-card";
+
+
+                                const resultClass =
+                                    item.result === "PASS"
+                                        ? "pass-result"
+                                        : "fail-result";
+
+
+                                resultBox.innerHTML =
+
+                                    `
+                                    <strong>
+                                        📝 Test Attempt ${index + 1}
+                                    </strong>
+
+                                    <p>
+                                        🎯 Score:
+                                        ${item.score}/${item.total_questions}
+                                    </p>
+
+                                    <p>
+                                        📌 Result:
+                                        <span class="${resultClass}">
+                                            ${item.result}
+                                        </span>
+                                    </p>
+
+                                    <p>
+                                        🕒 Date:
+                                        ${item.date_time}
+                                    </p>
+                                    `;
+
+
+                                historySection.appendChild(
+                                    resultBox
+                                );
+
+                            }
+                        );
+
+
+                    } catch (error) {
+
+                        console.error(
+                            error
+                        );
+
+
+                        alert(
+                            "Unable to load test history."
+                        );
+
+                    }
+
+                }
+            );
+
+
+        // ==========================================
+        // LOGOUT
+        // ==========================================
+
+        document
+            .getElementById(
+                "logoutBtn"
+            )
+            .addEventListener(
+                "click",
+                function (event) {
+
+                    event.preventDefault();
+
+
+                    localStorage.removeItem(
+                        "student_name"
+                    );
+
+
+                    window.location.href =
+                        "login.html";
+
+                }
+            );
+
+    </script>
+
+
+</body>
+
+</html>

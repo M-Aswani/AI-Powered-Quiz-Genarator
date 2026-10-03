@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI-Powered Quiz Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ==========================================
+           PROFESSIONAL REGISTER PAGE
+           ========================================== */
+
+        .register-box {
+            max-width: 460px;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        /* ==========================================
+           TOP AI ICON
+           ========================================== */
+
+        .register-icon {
+
+            width: 78px;
+            height: 78px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #7b2ff7
+            );
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 42px;
+
+            box-shadow:
+                0 10px 25px
+                rgba(0, 0, 0, 0.25);
+
+            animation:
+                registerFloat
+                3s ease-in-out infinite;
+        }
+
+
+        @keyframes registerFloat {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+
+        /* ==========================================
+           TITLE
+           ========================================== */
+
+        .register-box h1 {
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .register-subtitle {
+
+            margin-top: 0;
+
+            margin-bottom: 25px;
+
+            color: #eeeeee;
+
+            font-size: 14px;
+
+        }
+
+
+        /* ==========================================
+           TABS
+           ========================================== */
+
+        .register-tabs {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-bottom: 28px;
+
+        }
+
+
+        .register-tabs a,
+        .register-tabs .active {
+
+            padding: 10px 25px;
+
+            border-radius: 25px;
+
+            text-decoration: none;
+
+            color: white;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .register-tabs .active {
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #0072ff
+            );
+
+            box-shadow:
+                0 5px 15px
+                rgba(0, 114, 255, 0.3);
+
+        }
+
+
+        .register-tabs a:hover {
+
+            background:
+                rgba(255, 255, 255, 0.15);
+
+        }
+
+
+        /* ==========================================
+           INPUTS
+           ========================================== */
+
+        .register-box .form-group {
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .register-box .form-group input {
+
+            background:
+                rgba(255, 255, 255, 0.12);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.35);
+
+            transition: 0.3s;
+
+        }
+
+
+        .register-box .form-group input:focus {
+
+            border-color: #00c6ff;
+
+            box-shadow:
+                0 0 12px
+                rgba(0, 198, 255, 0.35);
+
+        }
+
+
+        /* ==========================================
+           REGISTER BUTTON
+           ========================================== */
+
+        #registerBtn {
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #0072ff,
+                #7b2ff7
+            );
+
+            box-shadow:
+                0 8px 20px
+                rgba(0, 114, 255, 0.3);
+
+            transition: 0.3s;
+
+        }
+
+
+        #registerBtn:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 25px
+                rgba(0, 114, 255, 0.45);
+
+        }
+
+
+        /* ==========================================
+           PROFESSIONAL MESSAGE
+           ========================================== */
+
+        .register-message {
+
+            display: none;
+
+            margin-top: 18px;
+
+            padding: 12px 15px;
+
+            border-radius: 10px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            text-align: center;
+
+            animation:
+                registerMessageAppear
+                0.3s ease;
+
+        }
+
+
+        @keyframes registerMessageAppear {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(-5px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+
+            }
+
+        }
+
+
+        .register-message.success {
+
+            display: block;
+
+            background:
+                rgba(46, 204, 113, 0.18);
+
+            border:
+                1px solid
+                rgba(46, 204, 113, 0.45);
+
+            color: #8cffb0;
+
+        }
+
+
+        .register-message.error {
+
+            display: block;
+
+            background:
+                rgba(255, 82, 82, 0.18);
+
+            border:
+                1px solid
+                rgba(255, 82, 82, 0.45);
+
+            color: #ffaaaa;
+
+        }
+
+
+        /* ==========================================
+           FOOTER
+           ========================================== */
+
+        .register-footer {
+
+            margin-top: 22px;
+
+            color: #eeeeee;
+
+            font-size: 13px;
+
+        }
+
+
+        .register-footer a {
+
+            color: white;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+        }
+
+
+        .register-footer a:hover {
+
+            text-decoration: underline;
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="auth-container">
+
+
+        <div class="auth-box register-box">
+
+
+            <!-- ==================================
+                 AI ICON
+                 ================================== -->
+
+            <div class="register-icon">
+                🤖
+            </div>
+
+
+            <!-- ==================================
+                 TITLE
+                 ================================== -->
+
+            <h1>
+                Create Your Account
+            </h1>
+
+
+            <p class="register-subtitle">
+                Join the smart quiz platform
+            </p>
+
+
+            <!-- ==================================
+                 LOGIN / REGISTER TABS
+                 ================================== -->
+
+            <div class="register-tabs">
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <span class="active">
+                    Register
+                </span>
+
+            </div>
+
+
+            <!-- ==================================
+                 USERNAME
+                 ================================== -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Create a username"
+                    autocomplete="username"
+                >
+
+            </div>
+
+
+            <!-- ==================================
+                 PASSWORD
+                 ================================== -->
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a password"
+                    autocomplete="new-password"
+                >
+
+            </div>
+
+
+            <!-- ==================================
+                 CONFIRM PASSWORD
+                 ================================== -->
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    autocomplete="new-password"
+                >
+
+            </div>
+
+
+            <!-- ==================================
+                 REGISTER BUTTON
+                 ================================== -->
+
+            <button id="registerBtn">
+                ✨ Create Account
+            </button>
+
+
+            <!-- ==================================
+                 PROFESSIONAL MESSAGE
+                 ================================== -->
+
+            <div
+                id="registerMessage"
+                class="register-message"
+            ></div>
+
+
+            <!-- ==================================
+                 LOGIN LINK
+                 ================================== -->
+
+            <p class="register-footer">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login here
+                </a>
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==========================================
+         REGISTRATION FUNCTIONALITY
+         ========================================== -->
+
+    <script>
+
+        const registerButton =
+            document.getElementById(
+                "registerBtn"
+            );
+
+
+        const messageElement =
+            document.getElementById(
+                "registerMessage"
+            );
+
+
+        /* ==========================================
+           SHOW MESSAGE
+           ========================================== */
+
+        function showMessage(
+            message,
+            type
+        ) {
+
+            messageElement.textContent =
+                message;
+
+            messageElement.className =
+                "register-message " + type;
+
+        }
+
+
+        /* ==========================================
+           REGISTER BUTTON
+           ========================================== */
+
+        registerButton.addEventListener(
+            "click",
+            async function () {
+
+
+                const name =
+                    document
+                        .getElementById("name")
+                        .value
+                        .trim();
+
+
+                const password =
+                    document
+                        .getElementById("password")
+                        .value;
+
+
+                const confirmPassword =
+                    document
+                        .getElementById(
+                            "confirmPassword"
+                        )
+                        .value;
+
+
+                /* =================================
+                   EMPTY FIELD CHECK
+                   ================================= */
+
+                if (
+                    !name ||
+                    !password ||
+                    !confirmPassword
+                ) {
+
+                    showMessage(
+                        "Please fill all fields.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                /* =================================
+                   PASSWORD MATCH CHECK
+                   ================================= */
+
+                if (
+                    password !==
+                    confirmPassword
+                ) {
+
+                    showMessage(
+                        "Passwords do not match.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                /* =================================
+                   BUTTON STATE
+                   ================================= */
+
+                registerButton.disabled =
+                    true;
+
+                registerButton.textContent =
+                    "🔄 Creating account...";
+
+
+                try {
+
+
+                    /* =============================
+                       SEND DATA TO FASTAPI
+                       ============================= */
+
+                    const response =
+                        await fetch(
+                            "http://127.0.0.1:8000/register",
+                            {
+
+                                method: "POST",
+
+                                headers: {
+
+                                    "Content-Type":
+                                        "application/json"
+
+                                },
+
+                                body:
+                                    JSON.stringify({
+
+                                        student_name:
+                                            name,
+
+                                        password:
+                                            password,
+
+                                        confirm_password:
+                                            confirmPassword
+
+                                    })
+
+                            }
+                        );
+
+
+                    const result =
+                        await response.json();
+
+
+                    /* =================================
+                       REGISTRATION SUCCESS
+                       ================================= */
+
+                    if (result.success) {
+
+
+                        showMessage(
+                            "Registration successful! Redirecting to login...",
+                            "success"
+                        );
+
+
+                        /*
+                         * Redirect after a short delay
+                         * so the user can see the message.
+                         */
+
+                        setTimeout(
+                            function () {
+
+                                window.location.href =
+                                    "login.html";
+
+                            },
+                            1000
+                        );
+
+
+                    } else {
+
+
+                        /* =============================
+                           REGISTRATION ERROR
+                           ============================= */
+
+                        showMessage(
+                            result.message,
+                            "error"
+                        );
+
+
+                        registerButton.disabled =
+                            false;
+
+                        registerButton.textContent =
+                            "✨ Create Account";
+
+                    }
+
+
+                } catch (error) {
+
+
+                    console.error(
+                        error
+                    );
+
+
+                    showMessage(
+                        "Unable to connect to the server.",
+                        "error"
+                    );
+
+
+                    registerButton.disabled =
+                        false;
+
+                    registerButton.textContent =
+                        "✨ Create Account";
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

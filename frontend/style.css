@@ -1,0 +1,443 @@
+/* ==========================================
+   GLOBAL
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* ==========================================
+   LOGIN / REGISTER / HOME
+   ========================================== */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 450px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(15px);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.3);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.auth-box h1 {
+    margin: 0;
+
+    font-size: 28px;
+
+    line-height: 1.3;
+}
+
+.tagline {
+    margin-top: 8px;
+
+    margin-bottom: 30px;
+
+    color: #eeeeee;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   LOGIN / REGISTER TABS
+   ========================================== */
+
+.auth-tabs {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.auth-tabs a,
+.auth-tabs .active {
+    padding: 10px 28px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.auth-tabs .active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.auth-tabs a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ==========================================
+   FORM
+   ========================================== */
+
+.form-group {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    color: #f5f5f5;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.3);
+
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: #dddddd;
+}
+
+.form-group input:focus {
+    border-color: white;
+
+    box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+
+/* ==========================================
+   LOGIN / REGISTER BUTTONS
+   ========================================== */
+
+#registerBtn,
+#loginBtn {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#registerBtn:hover,
+#loginBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 114, 255, 0.4);
+}
+
+
+/* ==========================================
+   ACCOUNT TEXT
+   ========================================== */
+
+.account-text {
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    color: #eeeeee;
+}
+
+.account-text a {
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.account-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   QUIZ PAGE
+   ========================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: 50px auto;
+
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #eeeeee;
+}
+
+
+/* ==========================================
+   QUIZ BOX
+   ========================================== */
+
+.quiz-box {
+    background: white;
+
+    color: #222;
+
+    padding: 30px;
+
+    margin-top: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ==========================================
+   QUESTION
+   ========================================== */
+
+#question {
+    text-align: left;
+
+    margin-bottom: 25px;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   OPTIONS
+   ========================================== */
+
+.options {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.option {
+    padding: 15px;
+
+    border: 2px solid #e0e0e0;
+
+    border-radius: 10px;
+
+    background: white;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    font-size: 16px;
+
+    color: #222;
+
+    transition: 0.2s;
+}
+
+.option:hover {
+    background: #f0f4ff;
+
+    border-color: #667eea;
+
+    transform: translateX(3px);
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+   ========================================== */
+
+#submitBtn {
+    margin-top: 25px;
+
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+#submitBtn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   RESULT
+   ========================================== */
+
+#result {
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+#explanation {
+    margin-top: 15px;
+
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   HISTORY
+   ========================================== */
+
+#historySection {
+    margin-top: 25px;
+}
+
+#historySection h3 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+#historySection > div {
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    ) !important;
+
+    border-radius: 12px !important;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .auth-box {
+        padding: 28px 20px;
+    }
+
+    .auth-box h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        width: 94%;
+
+        margin: 25px auto;
+    }
+
+    .quiz-box {
+        padding: 20px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    .option {
+        font-size: 15px;
+    }
+}

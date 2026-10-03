@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+
+flan_t5_output/
+trained_model/
+
+*.log
+.env
+.vscode/
+
+dataset/Educationq_full.json
+dataset/academic_qa.json
+dataset/academic_training_data.json

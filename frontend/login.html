@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI-Powered Quiz Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ==========================================
+           PROFESSIONAL LOGIN PAGE
+           ========================================== */
+
+        .login-box {
+            max-width: 460px;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        /* ==========================================
+           TOP AI ICON
+           ========================================== */
+
+        .login-icon {
+            width: 78px;
+            height: 78px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #7b2ff7
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 42px;
+
+            box-shadow:
+                0 10px 25px
+                rgba(0, 0, 0, 0.25);
+
+            animation: loginFloat 3s ease-in-out infinite;
+        }
+
+
+        @keyframes loginFloat {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+
+        /* ==========================================
+           TITLE
+           ========================================== */
+
+        .login-box h1 {
+            margin-bottom: 5px;
+        }
+
+
+        .login-subtitle {
+            margin-top: 0;
+            margin-bottom: 25px;
+
+            color: #eeeeee;
+
+            font-size: 14px;
+        }
+
+
+        /* ==========================================
+           TABS
+           ========================================== */
+
+        .login-tabs {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-bottom: 28px;
+        }
+
+
+        .login-tabs a,
+        .login-tabs .active {
+
+            padding: 10px 25px;
+
+            border-radius: 25px;
+
+            text-decoration: none;
+
+            color: white;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .login-tabs .active {
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #0072ff
+            );
+
+            box-shadow:
+                0 5px 15px
+                rgba(0, 114, 255, 0.3);
+
+        }
+
+
+        .login-tabs a:hover {
+
+            background:
+                rgba(255, 255, 255, 0.15);
+
+        }
+
+
+        /* ==========================================
+           INPUTS
+           ========================================== */
+
+        .login-box .form-group {
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .login-box .form-group input {
+
+            background:
+                rgba(255, 255, 255, 0.12);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.35);
+
+            transition: 0.3s;
+
+        }
+
+
+        .login-box .form-group input:focus {
+
+            border-color: #00c6ff;
+
+            box-shadow:
+                0 0 12px
+                rgba(0, 198, 255, 0.35);
+
+        }
+
+
+        /* ==========================================
+           LOGIN BUTTON
+           ========================================== */
+
+        #loginBtn {
+
+            background: linear-gradient(
+                135deg,
+                #00c6ff,
+                #0072ff,
+                #7b2ff7
+            );
+
+            box-shadow:
+                0 8px 20px
+                rgba(0, 114, 255, 0.3);
+
+            transition: 0.3s;
+
+        }
+
+
+        #loginBtn:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 25px
+                rgba(0, 114, 255, 0.45);
+
+        }
+
+
+        /* ==========================================
+           PROFESSIONAL MESSAGE
+           ========================================== */
+
+        .login-message {
+
+            display: none;
+
+            margin-top: 18px;
+
+            padding: 12px 15px;
+
+            border-radius: 10px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            text-align: center;
+
+            animation: messageAppear 0.3s ease;
+
+        }
+
+
+        @keyframes messageAppear {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(-5px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+        .login-message.success {
+
+            display: block;
+
+            background:
+                rgba(46, 204, 113, 0.18);
+
+            border:
+                1px solid
+                rgba(46, 204, 113, 0.45);
+
+            color: #8cffb0;
+
+        }
+
+
+        .login-message.error {
+
+            display: block;
+
+            background:
+                rgba(255, 82, 82, 0.18);
+
+            border:
+                1px solid
+                rgba(255, 82, 82, 0.45);
+
+            color: #ffaaaa;
+
+        }
+
+
+        /* ==========================================
+           FOOTER TEXT
+           ========================================== */
+
+        .login-footer {
+
+            margin-top: 22px;
+
+            color: #eeeeee;
+
+            font-size: 13px;
+
+        }
+
+
+        .login-footer a {
+
+            color: white;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+        }
+
+
+        .login-footer a:hover {
+
+            text-decoration: underline;
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="auth-container">
+
+
+        <div class="auth-box login-box">
+
+
+            <!-- ==================================
+                 AI ICON
+                 ================================== -->
+
+            <div class="login-icon">
+                🤖
+            </div>
+
+
+            <!-- ==================================
+                 TITLE
+                 ================================== -->
+
+            <h1>
+                Welcome Back!
+            </h1>
+
+
+            <p class="login-subtitle">
+                Login to continue your quiz journey
+            </p>
+
+
+            <!-- ==================================
+                 LOGIN / REGISTER TABS
+                 ================================== -->
+
+            <div class="login-tabs">
+
+                <span class="active">
+                    Login
+                </span>
+
+                <a href="index.html">
+                    Register
+                </a>
+
+            </div>
+
+
+            <!-- ==================================
+                 USERNAME
+                 ================================== -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your username"
+                    autocomplete="username"
+                >
+
+            </div>
+
+
+            <!-- ==================================
+                 PASSWORD
+                 ================================== -->
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                >
+
+            </div>
+
+
+            <!-- ==================================
+                 LOGIN BUTTON
+                 ================================== -->
+
+            <button id="loginBtn">
+                🔐 Login
+            </button>
+
+
+            <!-- ==================================
+                 PROFESSIONAL MESSAGE
+                 ================================== -->
+
+            <div
+                id="loginMessage"
+                class="login-message"
+            ></div>
+
+
+            <!-- ==================================
+                 REGISTER LINK
+                 ================================== -->
+
+            <p class="login-footer">
+
+                New user?
+
+                <a href="index.html">
+                    Create an account
+                </a>
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==========================================
+         LOGIN FUNCTIONALITY
+         ========================================== -->
+
+    <script>
+
+        const loginButton =
+            document.getElementById(
+                "loginBtn"
+            );
+
+
+        const messageElement =
+            document.getElementById(
+                "loginMessage"
+            );
+
+
+        function showMessage(
+            message,
+            type
+        ) {
+
+            messageElement.textContent =
+                message;
+
+            messageElement.className =
+                "login-message " + type;
+
+        }
+
+
+        loginButton.addEventListener(
+            "click",
+            async function () {
+
+
+                const name =
+                    document
+                        .getElementById("name")
+                        .value
+                        .trim();
+
+
+                const password =
+                    document
+                        .getElementById("password")
+                        .value;
+
+
+                /* =================================
+                   EMPTY FIELD CHECK
+                   ================================= */
+
+                if (!name || !password) {
+
+                    showMessage(
+                        "Please enter username and password.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                /* =================================
+                   LOGIN BUTTON STATE
+                   ================================= */
+
+                loginButton.disabled =
+                    true;
+
+                loginButton.textContent =
+                    "🔄 Logging in...";
+
+
+                try {
+
+
+                    const response =
+                        await fetch(
+                            "http://127.0.0.1:8000/login",
+                            {
+
+                                method: "POST",
+
+                                headers: {
+
+                                    "Content-Type":
+                                        "application/json"
+
+                                },
+
+                                body:
+                                    JSON.stringify({
+
+                                        student_name:
+                                            name,
+
+                                        password:
+                                            password
+
+                                    })
+
+                            }
+                        );
+
+
+                    const result =
+                        await response.json();
+
+
+                    /* =================================
+                       SUCCESS
+                       ================================= */
+
+                    if (result.success) {
+
+
+                        showMessage(
+                            "Login successful! Redirecting...",
+                            "success"
+                        );
+
+
+                        /*
+                         * Save logged-in username.
+                         * Used for test results and history.
+                         */
+
+                        localStorage.setItem(
+                            "student_name",
+                            result.student_name
+                        );
+
+
+                        /*
+                         * Give the user a moment
+                         * to see the success message.
+                         */
+
+                        setTimeout(
+                            function () {
+
+                                window.location.href =
+                                    "home.html";
+
+                            },
+                            700
+                        );
+
+
+                    } else {
+
+
+                        /* =============================
+                           LOGIN ERROR
+                           ============================= */
+
+                        showMessage(
+                            result.message,
+                            "error"
+                        );
+
+
+                        loginButton.disabled =
+                            false;
+
+                        loginButton.textContent =
+                            "🔐 Login";
+
+                    }
+
+
+                } catch (error) {
+
+
+                    console.error(
+                        error
+                    );
+
+
+                    showMessage(
+                        "Unable to connect to the server.",
+                        "error"
+                    );
+
+
+                    loginButton.disabled =
+                        false;
+
+                    loginButton.textContent =
+                        "🔐 Login";
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
