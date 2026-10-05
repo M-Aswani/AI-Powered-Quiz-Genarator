@@ -160,13 +160,13 @@ Backend Setup
 
 Python 3.12 is recommended for this project.
 
-2. Install dependencies
+2. Install Dependencies
 
 Open the terminal in the project folder and run:
 
 pip install -r requirements.txt
 
-3. Start FastAPI backend
+3. Start FastAPI Backend
 
 Run:
 
